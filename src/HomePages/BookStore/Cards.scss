@@ -1,15 +1,65 @@
+*{
+    box-sizing: border-box;
+    line-height: inherit;
+}
+.book_info{
+    background-color: #e5e5e5f8;
+    height: 775px;
+    max-width: 1600px;
+    width: 1519px;
+
+    &-body {
+        width: 1300px;
+        margin: 0 auto;
+        padding: 45px 0;
+
+        .book_title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 28px;
+            color: #f42f60;
+            font-weight: 700;
+        }
+
+        &-main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .book_btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            .btn {
+                color: #5E76D2;
+                border: 1px solid #4662d1;
+                background: transparent;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+
+}
+
+
+
 .css-jkvbif-MuiGrid-root {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% + 16px)!important;
+    width: calc(100% + 0px);
     margin: 1px!important;
     flex-direction: row;
     margin-top: -16px;
     width: 100%;
     margin-left: -16px!important;
     padding-left: 0!important;
-    padding-right: 0px;
+    padding-right: 31px!important;
     border-radius: 10px;
     margin-bottom: 10px;
 }

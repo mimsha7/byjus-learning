@@ -21,10 +21,10 @@ const Cards = () => {
     }, [Books])
 
     return (
-        <div style={{backgroundColor:'#e5e5e5f8',height:'775px', width:'1519px'}}>
-          <div style={{ width: '1300px', margin:'0 auto', padding:'45px 0px'}}>
-              <h1 style={{justifyContent: 'center', display: 'flex', marginBottom: '28px', color: '#EF5B81', fontWeight:'700'}}>একাডেমিক বইসমূহ</h1>
-            <div style={{display: 'flex', flexWrap:'wrap', gap: '24px', justifyContent: 'center'}}>
+        <div className="book_info">
+          <div className="book_info-body">
+              <h1 className="book_title">একাডেমিক বইসমূহ</h1>
+            <div className="book_info-body-main">
               
               {
                   // eslint-disable-next-line array-callback-return
@@ -36,8 +36,8 @@ const Cards = () => {
                 })
               }
             </div>
-              <div style={{display:'flex', justifyContent: 'center', marginTop:'20px'}}>
-                <Link to={`/books`}><Button style={{ color:'#5E76D2', border: '1px solid #5E76D2', background:'transparent', fontWeight: '600'}}>Take a tour</Button></Link>
+              <div className="book_btn">
+                <Link to={`/books`}><Button className="btn">Take a tour</Button></Link>
               </div>
           </div>
         </div>
