@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.course_info{
+    background-color: #e5e5e5f8;
+    height: 1050px;
+    margin: 0 auto 90px;
+
+    &-body {
+        width: 1280px;
+        margin: 0 auto 90px;
+        padding: 90px 0;
+        
+        .course_btn {
+            padding: 10px 20px;
+            border: none;
+            color: #d0deef;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 10px;
+            background: #3EC46D;
+            margin: auto;
+            display: block;
+            display: flex!important;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #EF5B81; 
+                color: #e5e5e5!important;
+            }
+        }
+
+        .course_title {
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            color: #EF5B81;
+            padding-bottom: 40px;
+        }
+
+        .info_body-main {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px 0 30px;
+            
+        }
+    }
+
+
+}
+
+.course_card {
+    width: 382px;
+    border: 0.5px solid #d0deef;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff!important;
+    margin: 5px 0 5px;
+
+    .card_img {
+        width: 380px;
+        height: 228px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card_firstPart {
+        padding: 20px 24px;
+
+        .title {
+            font-size: 20px;
+            text-align: left;
+            color: #EF5B81;
+        }
+        .about {
+            font-size: 16px;
+            text-align: left;
+            color: #676ea0;
+        }
+ 
+    }
+
+
+    .card_secondPart {
+        background-color: rgb(238, 236, 236);
+        margin: 0;
+        display: flex;
+        padding: 12px 24px;
+        border-radius: 0 0 15px 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        .price {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            
+        }
+        .btn {
+            padding: 8px 14px;
+            border: none;
+            color: #e5e5e5;
+            font-size: 17px;
+            font-weight: 400;
+            border-radius: 10px;
+            background: #9603b8;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #EF5B81;
+                color: #fff;
+            }
+        }
+    }
+}

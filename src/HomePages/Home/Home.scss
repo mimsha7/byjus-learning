@@ -1,0 +1,123 @@
+@import 'homeMedia';
+@import 'colors';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.home {
+    background-image: linear-gradient(90deg,#9603b8 0,#480773);
+
+    &_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 80vh;
+        z-index: 1;
+        width: 100%;
+        max-width: 1200px;
+        padding-right: 24px;
+        padding-left: 24px;
+    
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    &-left {
+        width: 100%;
+        line-height: 1.2;
+
+        @include tablet {
+            padding: 5rem 0; 
+        }
+
+        @include mobile {
+            line-height: 1.5;
+        }
+    }
+
+    &-left h1 {
+        font-size: 3rem;
+        color: $light;
+        margin: 0;
+
+        @include mobile {
+           font-size: 1.5rem; 
+        }
+    }
+
+    &-left h2 {
+        font-size: 3rem;
+        color: $light;
+        margin: 1px;
+
+        @include mobile {
+           font-size: 1.5rem; 
+        }
+    }
+
+    &-left p {
+        font-size: 1rem;
+        color: $light;
+        margin-top: 1rem;
+        font-weight: 400;
+
+        @include mobile {
+           font-size: 1.5rem; 
+        }
+    }
+
+    &-btn {
+        font-size: 1rem;
+        background-color: $orangePink;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 4px;
+        color: $light;
+        margin-top: 2rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+        outline: none;
+        font-weight: 600;
+    }
+
+    &-btn a {
+        position: relative;
+        z-index: 2;
+        color: $light;
+        text-decoration: none;
+    }
+
+    &-btn:after {
+       position: absolute;
+       content: '';
+       top: 0;
+       left: 0;
+       width: 0;
+       height: 100%;
+       background: $darkPink;
+       transition: all 0.3s;
+       border-radius: 4px; 
+    }
+
+    &-btn:hover:after {
+        width: 100%;
+    }
+
+    &-right {
+        text-align: center;
+    }
+
+    &-img {
+        height: 100%;
+        width: 100%;
+    }
+ }
+}

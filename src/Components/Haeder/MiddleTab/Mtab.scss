@@ -1,0 +1,142 @@
+@import 'MtabQuries';
+
+* {
+    box-sizing: border-box;
+}
+
+
+div {
+    display: block;
+}
+
+.tab_container {
+    background: linear-gradient(180deg,#f5f3fc00,#f5f3fc, 6.5%)!important;
+    background-repeat: repeat-x!important;
+    background-position: 0!important;
+    width: 100%!important;
+    position: relative!important;
+    padding-bottom: 18px!important;
+
+    @include tablet {
+        background-image: url('../../../Resources/images/Home/trust_background.png')!important;
+        padding-top: 12rem!important;
+        background: rgba(255, 255, 255, 0.908);
+    }
+
+    &:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        padding-top: 5.34%;
+        background-image: url('../../../Resources/images/Home/wavebg.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+        top: -1px;
+        left: 0;
+
+    }
+
+    &-main {
+        padding-top: 3.5rem!important;
+        padding-bottom: 3.5rem!important;
+        border-radius: 2rem!important;
+        background-color: #ffffff!important;
+        opacity: 1;
+        line-height: inherit;
+        box-shadow: 1px 1px 4px gray;
+
+        @include tablet {
+            width: 84%!important;
+        }
+
+    
+    & h2 {
+        font-weight: 700!important;
+        text-align: center!important;
+        padding-top: 0.75rem!important;
+        padding-bottom: 0.75rem!important;
+        margin: 0;
+
+        @include tablet {
+            font-size: 3rem!important;
+            line-height: 1!important;
+        }
+    }
+    }
+
+    &-grid {
+        display: grid!important;
+        grid-template-columns: repeat(2,minmax(0,1fr))!important;
+        margin-top: 2rem!important;
+        justify-content: space-evenly!important;
+        gap: 1.25rem!important;
+        text-align: center!important;
+
+        @include tablet {
+            display: flex!important;
+            gap: 0!important;
+        }
+    }
+
+    &-colspan {
+        grid-column: span 1;
+
+        & h5 {
+            line-height: 1rem!important;
+            font-weight: 700!important;
+            margin-top: 0.5rem;
+
+        }
+    }
+
+    &-colspan2 {
+        position: relative!important;
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+    }
+
+    &-colspan3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        margin: auto;
+        display: block;
+        width: 0;
+        height: 0;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+        &-img {
+        display: block;
+        max-width: 100%;
+        width: initial;
+        height: initial;
+        background: none;
+        opacity: 1;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .max-auto {
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+
+    .max-w {
+        max-width: 80rem!important;
+    }
+
+}
+

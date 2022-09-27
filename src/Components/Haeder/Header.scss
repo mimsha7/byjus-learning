@@ -1,0 +1,28 @@
+@import '_headerMedia';
+
+*{
+    box-sizing: border-box;
+    line-height: inherit;
+}
+
+header {
+    display: block;
+}
+.headerElem {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-image: linear-gradient(90deg,#9603b8 0,#480773);
+
+    @include tablet {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &:before {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+        }
+}

@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: block;
+}
+
+.headerElem {
+  position: fixed;
+  z-index: 99;
+}
+@media (min-width: 1024px) {
+  .headerElem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}/*# sourceMappingURL=Header.css.map */

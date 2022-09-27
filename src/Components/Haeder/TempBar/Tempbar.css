@@ -1,0 +1,72 @@
+.topbar .topbar-img3, .topbar .topbar-img2, .topbar .topbar-img1 {
+  width: 70%;
+  height: 15%;
+  margin-left: 8rem;
+  padding-left: 26px;
+  display: flex;
+}
+
+.topbar {
+  background-image: url("../../../Resources/images/Navbar/fifa_web.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: linear-gradient(90deg, #9603b8 0, #480773);
+}
+.topbar .mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.topbar .max-w {
+  max-width: 75rem !important;
+}
+.topbar .bar-alignment {
+  display: none !important;
+  justify-content: space-between !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.topbar .items-alignment {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.topbar .p-1 {
+  padding: 0.5rem !important;
+}
+.topbar .close-btn {
+  box-sizing: border-box !important;
+  display: inline-block !important;
+  overflow: hidden !important;
+  width: 32px !important;
+  height: 32px;
+  background: none !important;
+  opacity: 1 !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  cursor: pointer !important;
+}
+.topbar .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}/*# sourceMappingURL=Tempbar.css.map */

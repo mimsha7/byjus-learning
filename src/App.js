@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React, { createContext } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './Components/Haeder/Header';
+import NotFound from './Components/NotFound/NotFound';
+import BookTab from './HomePages/BookTab/BookTab';
+import Course from './HomePages/Course/Course';
+import DetailsCourse from './HomePages/DetailsCourse/DetailsCourse';
+import Home from './HomePages/Home/Home';
+import { Books, CourseData } from './myData/db';
+export const CourseContext = createContext();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CourseContext.Provider value={[CourseData, Books]}>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="*"> 
+            <Route index element={<NotFound />}/>
+          </Route>
+          <Route exact path="/">
+            <Route index element={<Home />}/>
+          </Route>
+          <Route path="/courses">
+            <Route index element={<Course />}/>
+          <Route path=":id" element={<DetailsCourse />}/>
+          </Route>
+          <Route path="/books">
+            <Route index element={<BookTab />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </CourseContext.Provider>
   );
 }
 

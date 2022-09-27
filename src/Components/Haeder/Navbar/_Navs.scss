@@ -1,0 +1,82 @@
+@import './colors';
+@import 'media-queris';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background-image: linear-gradient(90deg,#9603b8 0,#480773);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    z-index: 10;
+    position: relative;
+    width: 100%;
+
+    &_icon {
+        cursor: pointer;
+        margin-left: 3rem;
+        @extend %align-center;
+    }
+
+    &_bar {
+      opacity: 0;
+
+      @include tablet {
+        color: $light;
+        opacity: 1;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 2rem;
+      }  
+    }
+
+    .navbar_menu {
+      @extend %align-center;
+      list-style: none;
+      text-align: center;
+      margin-right: 30px;
+      margin: 0 auto;
+      
+      @include tablet {
+        display: none;
+      }
+
+      &-link {
+        color: $light;
+        @extend %align-center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        font-weight: 700;
+
+        &:hover {
+            color: $orangePink !important;
+            transition: all 0.3s ease;
+        }
+      }
+
+      .login {
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: #9603b8;
+        margin-left: 4rem;
+        color: $light;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            background: $orangePink;
+            transition: all 0.3s ease;
+        }
+      }
+
+    }
+
+}
