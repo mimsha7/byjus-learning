@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-# netlify live link: 
+# netlify live link: https://endearing-wisp-d99d43.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
