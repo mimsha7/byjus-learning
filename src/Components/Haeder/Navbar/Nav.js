@@ -20,7 +20,7 @@ const Nav = () => {
                 <a className="navbar_menu-link" href="/courses">Course</a>
                 <a className="navbar_menu-link" href="/books">Book Store</a>
                 <a className="navbar_menu-link" href="https://byjus.com/global/careers/" target="_blank" rel="noopener noreferrer">Careers</a>
-                <a className="navbar_menu-link" href="https://byjus.com/global/about/" target="_blank" rel="noopener noreferrer">About us</a> 
+                <a className="navbar_menu-link" href="/about">About us</a> 
                 
                 <a className="login" href="/"><i className="fa-sharp fa-solid fa-right-to-bracket"></i> Log in</a>
             </div>

@@ -2,6 +2,13 @@
 
 # netlify live link: https://endearing-wisp-d99d43.netlify.app/
 
+#Objectives: 
+    *This project offer a learning platform-
+    *it contains variety of Courses and details-
+    *try to evaluate things like context api, scss, material UI, react-router, etc-
+    *also contains routes and dynamic route-
+    *try to do responsive UI although not succeed! 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

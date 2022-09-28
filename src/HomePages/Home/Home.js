@@ -15,7 +15,7 @@ const Home = () => {
                     <h2>future of learning</h2>
                     <p>BYJU'S makes learning engaging & effective by leveraging deep pedagogy & cutting edge technology. With offerings ranging from adaptive self-learning courses on apps & web to personalised 1-on-1 classes with expert teachers for ages 4-18+, we have programs for every learner.</p>
                     <button className="home_container-btn">
-                        <a href="/courses">Explore Learning Programs</a>
+                        <a href="/">Explore Learning Programs</a>
                     </button>
                 </div>
                 <div className="home_container-right">
@@ -23,7 +23,7 @@ const Home = () => {
                 </div>
             </div>
 
-                {/* ------------components------------ */}
+                {/* ------------placement------------ */}
                 
                         <MiddleTab />
 

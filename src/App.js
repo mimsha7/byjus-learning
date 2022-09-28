@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Haeder/Header';
 import NotFound from './Components/NotFound/NotFound';
+import About from './HomePages/About/About';
 import BookTab from './HomePages/BookTab/BookTab';
 import Course from './HomePages/Course/Course';
 import DetailsCourse from './HomePages/DetailsCourse/DetailsCourse';
@@ -22,12 +23,15 @@ function App() {
           <Route exact path="/">
             <Route index element={<Home />}/>
           </Route>
-          <Route path="/courses">
+          <Route path="courses">
             <Route index element={<Course />}/>
           <Route path=":id" element={<DetailsCourse />}/>
           </Route>
-          <Route path="/books">
+          <Route path="books">
             <Route index element={<BookTab />} />
+          </Route>
+          <Route path="about">
+            <Route index element={<About />} />
           </Route>
         </Routes>
       </BrowserRouter>
