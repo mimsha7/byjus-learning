@@ -5,7 +5,7 @@
 #Objectives: 
     *This project offer a learning platform-
     *it contains variety of Courses and details-
-    *try to evaluate things like context api, scss, material UI, react-router, etc-
+    *try to explore things like context api, scss, material UI, react-router, etc-
     *also contains routes and dynamic route-
     *try to do responsive UI although not succeed! 
 
