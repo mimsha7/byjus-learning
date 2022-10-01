@@ -70,11 +70,17 @@
         color: $light;
         text-decoration: none;
         font-weight: 600;
+        font-size: medium;
 
         &:hover {
             background: $orangePink;
             transition: all 0.3s ease;
         }
+      }
+
+      .greet {
+        color: $light;
+        padding-left: 2px;
       }
 
     }
